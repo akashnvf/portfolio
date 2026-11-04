@@ -11,14 +11,15 @@ export const profileData: ProfileData = {
     "I work with systems and infrastructure, and I am building my skills in cloud platforms, automation, and DevOps practices to create reliable, scalable environments.",
   aboutParagraphs: [
     "I am a System Engineer with over 5 years of professional hands-on experience in enterprise systems operations, infrastructure monitoring, and mission-critical server environments.",
-    "My daily focus has centered on robust Unix/Linux administration, proactive troubleshooting, backup and disaster recovery, and ensuring maximum uptime for core business services.",
-    "I am actively expanding into cloud-native engineering and modern DevOps methodologies—practicing hands-on infrastructure provisioning with Terraform, containerized deployments with Docker, and CI/CD pipelines.",
+    "Starting as an IMS Engineer (Jan 2022 – Aug 2023), I managed telecom-grade IP Multimedia Subsystem infrastructure before moving into my current System Engineer role, where my daily focus has centred on robust Unix/Linux administration, proactive troubleshooting, backup and disaster recovery, and ensuring maximum uptime for core business services.",
+    "Over the last year I have been actively working on DevOps tooling — hands-on with Docker, Terraform, CI/CD pipelines (GitHub Actions), and cloud platforms (Azure & AWS) — with a clear goal to join a dedicated DevOps team and drive modern infrastructure automation.",
   ],
   aboutChips: [
     "Systems Engineering",
     "Linux / Unix",
+    "IMS & Telecom Infrastructure",
     "Infrastructure Operations",
-    "Cloud & DevOps Learning",
+    "Cloud & DevOps",
     "Automation & Scripting",
     "High Availability & Recovery",
   ],
@@ -31,18 +32,17 @@ export const profileData: ProfileData = {
     {
       value: "5+",
       label: "Years Experience",
-      description: "Enterprise Systems & Infrastructure Support",
+      description: "Enterprise Systems, IMS & Infrastructure Support",
+    },
+    {
+      value: "1+",
+      label: "Year DevOps Practice",
+      description: "Docker, Terraform, CI/CD & Cloud Platforms",
     },
     {
       value: "DevOps",
-      label: "Learner & Practitioner",
-      description: "Cloud, Containers & Automation Labs",
-    },
-    {
-      value: "100%",
-      label: "Passion for Innovation",
-      description: "Dedicated to Resilient Engineering",
+      label: "Career Goal",
+      description: "Transitioning to a Full-Time DevOps Engineer Role",
     },
   ],
 };
-
