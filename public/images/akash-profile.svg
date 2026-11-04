@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%" fill="none">
+  <defs>
+    <radialGradient id="orangeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF6A00" stop-opacity="0.45" />
+      <stop offset="60%" stop-color="#FF8500" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#FF6A00" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#222228" />
+      <stop offset="100%" stop-color="#141418" />
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1F1F24" />
+      <stop offset="100%" stop-color="#0E0E12" />
+    </linearGradient>
+    <linearGradient id="accentRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF8500" />
+      <stop offset="100%" stop-color="#FF5500" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Glow Behind Head -->
+  <circle cx="200" cy="180" r="160" fill="url(#orangeGlow)" />
+  <circle cx="200" cy="180" r="130" stroke="url(#accentRing)" stroke-width="2.5" stroke-dasharray="6 4" opacity="0.7" />
+
+  <!-- Base Silhouette / Shoulders -->
+  <path d="M70 460 C70 360 120 310 200 310 C280 310 330 360 330 460 Z" fill="url(#suitGrad)" stroke="#33333D" stroke-width="2" />
+  
+  <!-- Collar / Shirt Detail -->
+  <path d="M165 310 L200 370 L235 310 Z" fill="#2A2A32" />
+  <path d="M185 310 L200 345 L215 310 Z" fill="#FF6A00" opacity="0.85" />
+
+  <!-- Neck -->
+  <rect x="175" y="240" width="50" height="75" rx="10" fill="#2E2E36" />
+
+  <!-- Head / Face -->
+  <ellipse cx="200" cy="190" rx="65" ry="80" fill="url(#bodyGrad)" stroke="#3D3D48" stroke-width="2" />
+
+  <!-- Hair -->
+  <path d="M135 180 C135 110 160 100 200 100 C240 100 265 110 265 180 C250 140 220 130 200 130 C180 130 150 140 135 180 Z" fill="#111115" />
+  <path d="M140 145 C155 115 180 105 205 105 C240 105 255 125 260 150 C245 125 220 115 195 118 C170 120 150 135 140 145 Z" fill="#FF6A00" opacity="0.3" />
+
+  <!-- Glasses / Modern Tech Specs -->
+  <rect x="150" y="172" width="40" height="26" rx="6" fill="#111116" stroke="#FF6A00" stroke-width="2.5" />
+  <rect x="210" y="172" width="40" height="26" rx="6" fill="#111116" stroke="#FF6A00" stroke-width="2.5" />
+  <line x1="190" y1="184" x2="210" y2="184" stroke="#FF6A00" stroke-width="2.5" />
+  <line x1="140" y1="182" x2="150" y2="184" stroke="#FF6A00" stroke-width="2" />
+  <line x1="250" y1="184" x2="260" y2="182" stroke="#FF6A00" stroke-width="2" />
+
+  <!-- Monogram Badge floating bottom-right -->
+  <g transform="translate(270, 370)">
+    <circle cx="28" cy="28" r="28" fill="#17171B" stroke="#FF6A00" stroke-width="2.5" />
+    <text x="28" y="35" text-anchor="middle" fill="#FF6A00" font-family="system-ui, sans-serif" font-weight="bold" font-size="16">AM</text>
+  </g>
+
+  <!-- Linux / DevOps Terminal floating badge bottom-left -->
+  <g transform="translate(45, 370)">
+    <rect x="0" y="0" width="80" height="34" rx="8" fill="#17171B" stroke="#33333D" stroke-width="1.5" />
+    <circle cx="12" cy="17" r="3.5" fill="#FF5555" />
+    <circle cx="22" cy="17" r="3.5" fill="#FFBE2E" />
+    <circle cx="32" cy="17" r="3.5" fill="#2AC769" />
+    <text x="46" y="22" fill="#FF6A00" font-family="monospace" font-weight="bold" font-size="13">&gt;_</text>
+  </g>
+</svg>
+

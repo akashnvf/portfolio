@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%" fill="none">
+  <rect width="600" height="360" rx="16" fill="#121216" />
+  <defs>
+    <linearGradient id="azGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0078D4" />
+      <stop offset="100%" stop-color="#5C2D91" />
+    </linearGradient>
+    <linearGradient id="orangeGlowAz" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6A00" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#FF6A00" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background grid pattern -->
+  <path d="M0 60 H600 M0 120 H600 M0 180 H600 M0 240 H600 M0 300 H600" stroke="#1D1D24" stroke-width="1" />
+  <path d="M60 0 V360 M120 0 V360 M180 0 V360 M240 0 V360 M300 0 V360 M360 0 V360 M420 0 V360 M480 0 V360 M540 0 V360" stroke="#1D1D24" stroke-width="1" />
+
+  <!-- VNet Outer Boundary -->
+  <rect x="70" y="50" width="460" height="260" rx="14" fill="#17171E" stroke="#0078D4" stroke-width="1.8" stroke-dasharray="6 4" />
+  <rect x="90" y="38" width="130" height="24" rx="6" fill="#0078D4" />
+  <text x="155" y="54" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="11" font-weight="bold">Azure VNet: 10.0.0.0/16</text>
+
+  <!-- Public Subnet -->
+  <rect x="100" y="80" width="180" height="200" rx="10" fill="#1B1B24" stroke="#2D2D3A" stroke-width="1.5" />
+  <text x="190" y="104" text-anchor="middle" fill="#B8B8BE" font-family="sans-serif" font-size="12" font-weight="600">Public Subnet (DMZ)</text>
+
+  <!-- Bastion / NSG node -->
+  <rect x="120" y="125" width="140" height="55" rx="8" fill="#22222E" stroke="#FF6A00" stroke-width="1.5" />
+  <text x="190" y="148" text-anchor="middle" fill="#FF8500" font-family="sans-serif" font-size="12" font-weight="bold">NSG Firewall</text>
+  <text x="190" y="166" text-anchor="middle" fill="#8E8E98" font-family="monospace" font-size="10">Rule: SSH Port 22</text>
+
+  <rect x="120" y="200" width="140" height="60" rx="8" fill="#22222E" stroke="#3D3D4E" stroke-width="1.5" />
+  <circle cx="140" cy="230" r="10" fill="#0078D4" />
+  <text x="195" y="226" text-anchor="middle" fill="#F5F5F5" font-family="sans-serif" font-size="12" font-weight="bold">Jumpbox VM</text>
+  <text x="195" y="244" text-anchor="middle" fill="#00BCF2" font-family="monospace" font-size="10">Ubuntu 22.04 LTS</text>
+
+  <!-- Connection link -->
+  <path d="M280 180 L320 180" stroke="#FF6A00" stroke-width="2" stroke-dasharray="4 3" />
+
+  <!-- Private Subnet -->
+  <rect x="320" y="80" width="180" height="200" rx="10" fill="#1B1B24" stroke="#2D2D3A" stroke-width="1.5" />
+  <text x="410" y="104" text-anchor="middle" fill="#B8B8BE" font-family="sans-serif" font-size="12" font-weight="600">Private Subnet (Workloads)</text>
+
+  <!-- Backend VM node -->
+  <rect x="340" y="125" width="140" height="60" rx="8" fill="#22222E" stroke="#3D3D4E" stroke-width="1.5" />
+  <circle cx="360" cy="155" r="10" fill="#2AC769" />
+  <text x="415" y="151" text-anchor="middle" fill="#F5F5F5" font-family="sans-serif" font-size="12" font-weight="bold">Backend Server</text>
+  <text x="415" y="169" text-anchor="middle" fill="#2AC769" font-family="monospace" font-size="10">10.0.2.4 (Private)</text>
+
+  <!-- Storage node -->
+  <rect x="340" y="200" width="140" height="60" rx="8" fill="#22222E" stroke="#3D3D4E" stroke-width="1.5" />
+  <text x="410" y="226" text-anchor="middle" fill="#F5F5F5" font-family="sans-serif" font-size="12" font-weight="bold">Storage Account</text>
+  <text x="410" y="244" text-anchor="middle" fill="#B8B8BE" font-family="monospace" font-size="10">RBAC Secured</text>
+</svg>
+
